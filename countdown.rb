@@ -10,8 +10,9 @@ def countdown(number)
 end
 
 def countdown_with_sleep(num_secs)
-  while num_secs > 0
-    puts "#{num_secs} SECOND(S)!"
-    num_secs -= 1
+  if runtime.real.to_i >= 5
+    yield
+  else
+    false
   end
 end
