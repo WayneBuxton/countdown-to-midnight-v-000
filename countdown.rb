@@ -10,7 +10,7 @@ def countdown(number)
 end
 
 def countdown_with_sleep(seconds)
-  runtime = Benchmark.measure 
+  runtime = Benchmark.measure
   runtime.real.to_i >= 5
   yield
 end
