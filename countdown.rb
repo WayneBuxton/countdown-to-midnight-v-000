@@ -12,5 +12,6 @@ end
 def countdown_with_sleep(seconds)
   runtime = Benchmark.measure { countdown_with_sleep(5) }
   loop runtime.real.to_i >= 5
+  true
 
 end
