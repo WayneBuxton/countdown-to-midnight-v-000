@@ -10,6 +10,7 @@ def countdown(number)
 end
 
 def countdown_with_sleep(num_secs)
+  runtime = Benchmark.measure { countdown_with_sleep(5) }
   if runtime.real.to_i >= 5
     yield
   else
