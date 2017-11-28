@@ -10,5 +10,6 @@ def countdown(number)
 end
 
 def countdown_with_sleep(seconds)
+  loop runtime.real.to_i >= 5
 
 end
