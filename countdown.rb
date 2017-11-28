@@ -10,7 +10,5 @@ def countdown(number)
 end
 
 def countdown_with_sleep(num_secs)
-  runtime = Benchmark.measure{countdown_with_sleep(num_secs)}
-
 
 end
